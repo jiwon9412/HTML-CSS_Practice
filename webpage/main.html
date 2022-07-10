@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #box {
+        width: 1100px;
+        height: 1200px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+      }
+
+      li {
+        list-style: none;
+      }
+
+      aside {
+        float: left;
+        width: 220px;
+        margin: 70px 0;
+      }
+
+      .sideTitle {
+        color: white;
+        background-color: #0ca9a3;
+        padding: 12px;
+        font-size: 18px;
+      }
+
+      .comment {
+        padding: 15px 13px;
+        font-size: 15px;
+      }
+
+      .search input {
+        width: 160px;
+        height: 30px;
+        border: solid 1px black;
+        vertical-align: top;
+      }
+      .search button {
+        border: solid 1px black;
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
+      }
+
+      .menuTilte {
+        border-top: 2px solid black;
+        font-size: 18px;
+        margin: 12px auto;
+        padding: 10px 0px;
+        border-bottom: 1px dotted gray;
+      }
+
+      .menuList {
+        line-height: 2em;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+
+      .ripple {
+        border: 1px solid #0ca9a3;
+        padding: 10px;
+      }
+
+      .rippleTitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .rippleList {
+        line-height: 2em;
+        font-size: 14px;
+      }
+
+      #main {
+        width: 840px;
+        margin: 70px 0;
+        float: right;
+      }
+
+      #main1 {
+        width: 405px;
+        float: left;
+      }
+
+      #main2 {
+        width: 400px;
+        float: right;
+      }
+
+      .mainTilte {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .itemList {
+        border-top: 1px solid black;
+        padding: 20px 0;
+      }
+      .items {
+        position: relative;
+        height: 34px;
+      }
+      .subject {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .date {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .item1 {
+        float: right;
+      }
+
+      .item2 {
+        float: left;
+      }
+
+      .item3 {
+        float: right;
+      }
+
+      .item4 {
+        float: left;
+      }
+
+      .imgBread1 {
+        width: 189px;
+        margin-top: 30px;
+        border: 2px solid black;
+      }
+      .imgBread2 {
+        width: 189px;
+        margin-top: 30px;
+        border: 2px solid black;
+      }
+      .imgBread3 {
+        width: 189px;
+        margin-top: 30px;
+        border: 2px solid black;
+      }
+      .imgBread4 {
+        width: 189px;
+        margin-top: 30px;
+        border: 2px solid black;
+      }
+
+      .subject2 {
+        font-weight: bold;
+      }
+      .date2 {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <aside>
+        <h2 class="sideTitle">The 베이킹</h2>
+        <p class="comment">
+          안녕하세요. 쿠키와 빵 만들기 정보를 공유하고 소통하는 공간입니다.
+        </p>
+
+        <div class="search">
+          <input type="text" />
+          <button type="submit">검색</button>
+        </div>
+
+        <h2 class="menuTilte">베이킹/요리</h2>
+
+        <ul class="menuList">
+          <li>쿠키 만들기</li>
+          <li>빵 만들기</li>
+          <li>마카롱 만들기</li>
+        </ul>
+
+        <div class="ripple">
+          <h2 class="rippleTitle">최근 댓글</h2>
+          <ul class="rippleList">
+            <li>안녕하세요.</li>
+            <li>안녕하세요.</li>
+            <li>안녕하세요.</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section id="main">
+        <div id="main1">
+          <h2 class="mainTilte">알림</h2>
+          <ul class="itemList">
+            <li class="items">
+              <div class="subject">8월 3일 쿠킹 클래스 연기합니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">8월 3일 쿠킹 클래스 연기합니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">8월 3일 쿠킹 클래스 연기합니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">8월 3일 쿠킹 클래스 연기합니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">8월 3일 쿠킹 클래스 연기합니다.</div>
+              <div class="date">09:30</div>
+            </li>
+          </ul>
+
+          <h2 class="mainTilte">게시판</h2>
+          <ul class="itemList">
+            <li class="items">
+              <div class="subject">안녕하세요. 반갑습니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">안녕하세요. 반갑습니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">안녕하세요. 반갑습니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">안녕하세요. 반갑습니다.</div>
+              <div class="date">09:30</div>
+            </li>
+            <li class="items">
+              <div class="subject">안녕하세요. 반갑습니다.</div>
+              <div class="date">09:30</div>
+            </li>
+          </ul>
+        </div>
+        <div id="main2">
+          <h2 class="mainTilte">제빵 클래스</h2>
+          <ul class="item1">
+            <li><img src="./빵1.jpeg" class="imgBread1" /></li>
+            <li class="subject2">도너츠만들기[1]</li>
+            <li class="date2">21.09.30</li>
+          </ul>
+
+          <ul class="item2">
+            <li><img src="./빵2.jpeg" class="imgBread2" /></li>
+            <li class="subject2">도너츠만들기[2]</li>
+            <li class="date2">21.09.30</li>
+          </ul>
+
+          <ul class="item3">
+            <li><img src="./빵3.jpeg" class="imgBread3" /></li>
+            <li class="subject2">도너츠만들기[3]</li>
+            <li class="date2">21.09.30</li>
+          </ul>
+
+          <ul class="item4">
+            <li><img src="./빵4.jpeg" class="imgBread4" /></li>
+            <li class="subject2">도너츠만들기[4]</li>
+            <li class="date2">21.09.30</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
